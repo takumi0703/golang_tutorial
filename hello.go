@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
-func add(x int, y int) int { // int == 型指定
-	return x + y
+func swap(x, y string) (string, string) {
+	return y, x
 }
 
 func main() {
-	fmt.Println(add(10, 100))
+	a, b := swap("hello", "world")
+	fmt.Println(a, b)
 }
