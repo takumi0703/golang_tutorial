@@ -1,11 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
+
+func add(x int, y int) int { // int == 型指定
+	return x + y
+}
 
 func main() {
-	// fmt.Println(math.pi)=> error
-	fmt.Println(math.Pi) // => 大文字から始まるものが、外部パッケージから参照できる
+	fmt.Println(add(10, 100))
 }
