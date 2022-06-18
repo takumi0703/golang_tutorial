@@ -2,12 +2,9 @@ package main
 
 import "fmt"
 
-func split(sum int) (x, y int) {
-	x = sum - 2
-	y = sum - x
-	return
-}
+var i, j int = 1, 2
 
 func main() {
-	fmt.Println(split(10))
+	var c, python, java = true, false, "no!"
+	fmt.Println(i, j, c, python, java)
 }
